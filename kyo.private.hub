@@ -1,19 +1,9 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("kyo private hub v1.0",  "DarkTheme")
+local Window = Library.CreateLib("kyo private hub v1.0",  "BloodTheme")
 
 local UniversalTab = Window:NewTab("Player")
 local UniversalSection1 = UniversalTab:NewSection("Misc")
 
-
-UniversalSection1:NewButton("Anti Afk (READ DESC)", "click 10-inf times ", function()
-    print("Clicked")
-    local vu = game:GetService("VirtualUser")
-    game:GetService("Players").LocalPlayer.Idled:connect(function()
-       vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-       wait(1)
-       vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-    end)
-end)
 
 UniversalSection1:NewSlider("Walk Speed", "Changes ur Walk Speed.", 500, 16, function(s)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
@@ -33,6 +23,60 @@ UniversalSection1:NewToggle("Toggle Jump Power", "Toggles Jump Power.", function
     end
 end)
 
+UniversalSection1:NewButton("Anti Afk (READ DESC)", "click 10-inf times ", function()
+    print("Clicked")
+    local vu = game:GetService("VirtualUser")
+    game:GetService("Players").LocalPlayer.Idled:connect(function()
+       vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+       wait(1)
+       vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+    end)
+end)
+
+UniversalSection1:NewToggle("Godmode", "Ur God now lol.", function(state)
+    
+    if state then
+        loadstring(game:HttpGet("https://pastebin.com/raw/FwfNEqYz", true))()
+    else
+        loadstring(game:HttpGet("https://pastebin.com/raw/FwfNEqYz", true))()
+    end
+end)
+
+UniversalSection1:NewToggle("Invisible", "White cuh.", function(state)
+    
+    if state then
+        loadstring(game:HttpGet("https://pastebin.com/raw/HMcCQbpk", true))()
+    else
+        loadstring(game:HttpGet("https://pastebin.com/raw/HMcCQbpk", true))()
+    end
+end)
+
+UniversalSection1:NewToggle("Fly", "Press [C].", function(state)
+    
+    if state then
+        pcall(loadstring(game:HttpGet("https://pastebin.com/raw/ReJ0TXqg")))
+    else
+        pcall(loadstring(game:HttpGet("https://pastebin.com/raw/ReJ0TXqg")))
+    end
+end)
+
+UniversalSection1:NewToggle("ESP", "Esp nigga.", function(state)
+    
+    if state then
+        loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/WRD ESP.txt"))()
+    else
+        loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/WRD ESP.txt"))()
+    end
+end)
+
+UniversalSection1:NewToggle("Noclip", "Press [B].", function(state)
+    
+    if state then
+        pcall(loadstring(game:HttpGet("https://pastebin.com/raw/kt3Nxzw1")))
+    else
+        pcall(loadstring(game:HttpGet("https://pastebin.com/raw/kt3Nxzw1")))
+    end
+end)
 
 UniversalSection1:NewButton("Chat Bypasser", "Gives you a Chat Bypasser which allows you to bypass the roblox chat filter..", function()
     loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
@@ -50,6 +94,15 @@ game:GetService("UserInputService").JumpRequest:connect(function()
 		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
 	end
 end)
+end)
+
+UniversalSection1:NewButton("TP Tool", "TP tool in items.", function(state)
+    
+    if state then
+        pcall(loadstring(game:HttpGet("https://pastebin.com/raw/njMw0Bke")))
+    else
+        pcall(loadstring(game:HttpGet("https://pastebin.com/raw/njMw0Bke")))
+    end
 end)
 
 
