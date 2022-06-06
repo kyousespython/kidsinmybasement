@@ -195,6 +195,14 @@ UniversalSection1:NewButton("YBA Hub (very recommended)", "Opens Noname Hub GUI.
     end
 end)
 
+UniversalSection1:NewButton("Inori Hub", "Opens Inori Hub GUI.", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/InoriHub/Your-Weird/main/WeirdHub"))()
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/InoriHub/Your-Weird/main/WeirdHub"))()
+    end
+end)
+
 local UniversalTab = Window:NewTab("More Scripts")
 local UniversalSection1 = UniversalTab:NewSection("best of the best")
 
@@ -213,9 +221,6 @@ UniversalSection1:NewButton("Tate Mc'rae", "Tate Mc'rae event script.", function
         loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua"))()
     end
 end)
-
-local UniversalTab = Window:NewTab("Sonic Sim")
-local UniversalSection1 = UniversalTab:NewSection("SONIC LMAO")
 
 UniversalSection1:NewButton("Master Hub", "Opens Sonic GUI.", function(state)
     if state then
