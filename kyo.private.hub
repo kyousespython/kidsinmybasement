@@ -138,7 +138,7 @@ UniversalSection1:NewButton("Command GUI", "Opens Admin commands.", function(sta
     if state then
         loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
     else
-        
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
     end
 end)
 
@@ -294,7 +294,7 @@ UniversalSection1:NewButton("Inf Yield", "Opends Admin commands.", function(stat
     if state then
         loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
     else
-        
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
     end
 end)
 
