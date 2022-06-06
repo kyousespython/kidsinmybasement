@@ -126,6 +126,29 @@ UniversalSection1:NewButton("Oblivion", "Opens Oblivion script.", function(state
     end
 end)
 
+local UniversalTab = Window:NewTab("Pet Sim X")
+local UniversalSection1 = UniversalTab:NewSection("Pet Simulator X scripts")
+
+UniversalSection1:NewButton("Saza Hub", "Opens Pet Sim script.", function(state)
+    if state then
+        _G.Color = Color3.fromRGB(255, 255, 255)
+loadstring(game:HttpGet"https://rawscripts.net/raw/SAZA-HUB_496")()
+    else
+        _G.Color = Color3.fromRGB(255, 255, 255)
+loadstring(game:HttpGet"https://rawscripts.net/raw/SAZA-HUB_496")()
+    end
+end)
+
+UniversalSection1:NewButton("Project Meow", "Opens Project Meow script.", function(state)
+    if state then
+        loadstring(game:HttpGet"https://rawscripts.net/raw/Project-Meow_421")()
+    else
+        loadstring(game:HttpGet"https://rawscripts.net/raw/Project-Meow_421")()
+    end
+end)
+
+
+
 local UniversalTab = Window:NewTab("Blox Fruits")
 local UniversalSection1 = UniversalTab:NewSection("Maintence")
 
@@ -161,7 +184,7 @@ UniversalSection1:NewButton("Noname Hub", "Opens Noname Hub GUI.", function(stat
     end
 end)
 
-local UniversalTab = Window:NewTab("Your Bizzare Adventure")
+local UniversalTab = Window:NewTab("YBA")
 local UniversalSection1 = UniversalTab:NewSection("Script GUI")
 
 UniversalSection1:NewButton("YBA Hub (very recommended)", "Opens Noname Hub GUI.", function(state)
@@ -172,6 +195,35 @@ UniversalSection1:NewButton("YBA Hub (very recommended)", "Opens Noname Hub GUI.
     end
 end)
 
+local UniversalTab = Window:NewTab("More Scripts")
+local UniversalSection1 = UniversalTab:NewSection("best of the best")
+
+UniversalSection1:NewButton("Gucci Hub", "Gucci Hub script.", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua"))()
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua"))()
+    end
+end)
+
+UniversalSection1:NewButton("Tate Mc'rae", "Tate Mc'rae event script.", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua"))()
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua"))()
+    end
+end)
+
+local UniversalTab = Window:NewTab("Sonic Sim")
+local UniversalSection1 = UniversalTab:NewSection("SONIC LMAO")
+
+UniversalSection1:NewButton("Master Hub", "Opens Sonic GUI.", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/destylol/masterhubv311/itachi/Main.lua"))()
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/destylol/masterhubv311/itachi/Main.lua"))()
+    end
+end)
 
 local UniversalTab = Window:NewTab("Other")
 local UniversalSection1 = UniversalTab:NewSection("Maintence")
@@ -187,6 +239,7 @@ UniversalSection1:NewButton("Inf Yield", "Opends Admin commands.", function(stat
         
     end
 end)
+
 
 
 UniversalSection1:NewButton("Find POS (Click F9)", "Allows you to find your POS with CFrame.", function()
