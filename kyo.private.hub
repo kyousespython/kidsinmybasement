@@ -1,0 +1,248 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("kyo private hub v1.0",  "DarkTheme")
+
+local UniversalTab = Window:NewTab("Player")
+local UniversalSection1 = UniversalTab:NewSection("Misc")
+
+
+UniversalSection1:NewButton("Anti Afk (READ DESC)", "click 10-inf times ", function()
+    print("Clicked")
+    local vu = game:GetService("VirtualUser")
+    game:GetService("Players").LocalPlayer.Idled:connect(function()
+       vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+       wait(1)
+       vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+    end)
+end)
+
+UniversalSection1:NewSlider("Walk Speed", "Changes ur Walk Speed.", 500, 16, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+
+UniversalSection1:NewSlider("Jump Power", "Changes ur Jump Power.", 500, 50, function(jp)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = jp
+end)
+
+UniversalSection1:NewToggle("Toggle Jump Power", "Toggles Jump Power.", function(state)
+    
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.UseJumpPower = true
+    else
+        game.Players.LocalPlayer.Character.Humanoid.UseJumpPower = false
+    end
+end)
+
+
+UniversalSection1:NewButton("Chat Bypasser", "Gives you a Chat Bypasser which allows you to bypass the roblox chat filter..", function()
+    loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
+end)
+
+UniversalSection1:NewSlider("Fov", "Changes Fov", 120, 70, function(v)
+    workspace.CurrentCamera.FieldOfView = v
+    print("FOV is [v] ")
+end)
+
+UniversalSection1:NewButton("Inf Jumps", "Enables Infinite Jumps.", function()
+    local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+end)
+
+
+local UniversalTab = Window:NewTab("Clicker Simulator")
+local UniversalSection1 = UniversalTab:NewSection("All the clicker sim GUI, made by me kyo#2222")
+
+UniversalSection1:NewToggle("Fake Hatch", "Auto Hatch nigga.", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/hackerDashDash/ClickerSimulator/main/clickerSimulatorFakeHatcher.lua",true))()
+    else
+        
+    end
+end)
+
+
+UniversalSection1:NewButton("Unlock 2x Luck Boost", "2x Luck boost.", function()
+    plr.Boosts.DoubleLuck.isActive.Value = true end)
+
+UniversalSection1:NewButton("Unlock 2x Click Boost", "Unlocks 2x Clicks.", function()
+    plr.Boosts.DoubleClicks.isActive.Value = true end)
+
+UniversalSection1:NewButton("Craft all golden", "Makes all pets golden (if able).", function()
+        for _, v in next, plr.petOwned:GetChildren() do
+     rep.Events.Client.upgradePet:FireServer(v.name.Value, 2, v)
+     end
+end)
+
+
+local UniversalTab = Window:NewTab("Pls Donate")
+local UniversalSection1 = UniversalTab:NewSection("Maintence")
+
+UniversalSection1:NewButton("Command GUI", "Opens Admin commands.", function(state)
+    if state then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    else
+        
+    end
+end)
+
+
+
+local UniversalTab = Window:NewTab("Dahood Modded")
+local UniversalSection1 = UniversalTab:NewSection("Maintence")
+
+UniversalSection1:NewButton("Softvortex (NEW)", "Opens Softvortex script.", function(state)
+    if state then
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/SoftVortex/609/main/99"),true))()
+    else
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/SoftVortex/609/main/99"),true))()
+    end
+end)
+
+UniversalSection1:NewButton("Focus Hub", "Opens Focus Hub script.", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/scripts/main/HoodModdedFocus.lua", true))()
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/scripts/main/HoodModdedFocus.lua", true))()
+    end
+end)
+
+UniversalSection1:NewButton("Chariot Ware", "Opens Chariot Ware script.", function(state)
+    if state then
+        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Rippeed/DaHoodinary/main/chariotsware"))()
+    else
+        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Rippeed/DaHoodinary/main/chariotsware"))()
+    end
+end)
+
+UniversalSection1:NewButton("Oblivion", "Opens Oblivion script.", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CorruptOblivion/Oblivion/main/loader.lua"))()
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CorruptOblivion/Oblivion/main/loader.lua"))()
+    end
+end)
+
+local UniversalTab = Window:NewTab("Blox Fruits")
+local UniversalSection1 = UniversalTab:NewSection("Maintence")
+
+UniversalSection1:NewButton("Evo x Hub (recommended)", "Opens Evo x Hub GUI.", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/2"))()
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/2"))()
+    end
+end)
+
+UniversalSection1:NewButton("String HUB", "Opens String GUI.", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/OPPV01/DEX/main/Protected.lua.txt", true))()
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/OPPV01/DEX/main/Protected.lua.txt", true))()
+    end
+end)
+
+UniversalSection1:NewButton("Thunder Z", "Thunder Z.", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-05/HUB/main/Script"))()
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-05/HUB/main/Script"))()
+    end
+end)
+
+UniversalSection1:NewButton("Noname Hub", "Opens Noname Hub GUI.", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Foxy-Noname/SCRIPT/main/NONAME/NONAMEX.lua",true))();
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Foxy-Noname/SCRIPT/main/NONAME/NONAMEX.lua",true))();
+    end
+end)
+
+local UniversalTab = Window:NewTab("Your Bizzare Adventure")
+local UniversalSection1 = UniversalTab:NewSection("Script GUI")
+
+UniversalSection1:NewButton("YBA Hub (very recommended)", "Opens Noname Hub GUI.", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ketamo/ybaa/main/yba"))()
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ketamo/ybaa/main/yba"))()
+    end
+end)
+
+
+local UniversalTab = Window:NewTab("Other")
+local UniversalSection1 = UniversalTab:NewSection("Maintence")
+
+UniversalSection1:NewButton("Dex", "Gives you the DEX Explorer.", function()
+    loadstring(game:GetObjects("rbxassetid://418957341")[1].Source)()
+end)
+
+UniversalSection1:NewButton("Inf Yield", "Opends Admin commands.", function(state)
+    if state then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    else
+        
+    end
+end)
+
+
+UniversalSection1:NewButton("Find POS (Click F9)", "Allows you to find your POS with CFrame.", function()
+    print(currentPOS)
+end)
+
+
+UniversalSection1:NewButton("Cmd X", "Gives you the Cmd X admin.", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))();
+end)
+UniversalSection1:NewButton("Fates", "Gives you Fates Admin.", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+end)
+
+UniversalSection1:NewButton("Find POS (Click F9)", "Allows you to find your POS with CFrame.", function()
+    print(currentPOS)
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local Version = "0.0.3"
+
+
+local HomeTab = Window:NewTab("Credits")
+local HomeSection = HomeTab:NewSection("Home")
+
+HomeSection:NewLabel("Welcome, " .. game.Players.LocalPlayer.Name .. "to Kyos Hub")
+HomeSection:NewLabel("Version is " .. Version .. ".")
+
+HomeSection:NewLabel("Additional Help: <font color='#5865F2'>kyo#2222</font>")
+HomeSection:NewLabel("https://discord.gg/mEBPWnUCCd")
