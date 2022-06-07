@@ -372,7 +372,7 @@ local Version = "0.0.3"
 local HomeTab = Window:NewTab("Credits")
 local HomeSection = HomeTab:NewSection("Home")
 
-HomeSection:NewLabel("Welcome, " .. game.Players.LocalPlayer.Name .. "to Kyos Hub")
+HomeSection:NewLabel("Welcome, " .. game.Players.LocalPlayer.Name .. " to Kyos Hub")
 HomeSection:NewLabel("Version is " .. Version .. ".")
 
 HomeSection:NewLabel("Additional Help: <font color='#5865F2'>kyo#2222</font>")
