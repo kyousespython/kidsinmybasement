@@ -49,7 +49,7 @@ UniversalSection3:NewToggle("Invisible", "White cuh.", function(state)
     if state then
         loadstring(game:HttpGet("https://pastebin.com/raw/HMcCQbpk", true))()
     else
-        loadstring(game:HttpGet("https://pastebin.com/raw/HMcCQbpk", true))()
+        
     end
 end)
 
@@ -58,7 +58,7 @@ UniversalSection3:NewToggle("Fly", "Press [C].", function(state)
     if state then
         pcall(loadstring(game:HttpGet("https://pastebin.com/raw/ReJ0TXqg")))
     else
-        pcall(loadstring(game:HttpGet("https://pastebin.com/raw/ReJ0TXqg")))
+        
     end
 end)
 
@@ -67,7 +67,7 @@ UniversalSection3:NewToggle("ESP", "Esp nigga.", function(state)
     if state then
         loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/WRD ESP.txt"))()
     else
-        loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/WRD ESP.txt"))()
+        
     end
 end)
 
@@ -76,7 +76,7 @@ UniversalSection3:NewToggle("Noclip", "Press [B].", function(state)
     if state then
         pcall(loadstring(game:HttpGet("https://pastebin.com/raw/kt3Nxzw1")))
     else
-        pcall(loadstring(game:HttpGet("https://pastebin.com/raw/kt3Nxzw1")))
+        
     end
 end)
 
