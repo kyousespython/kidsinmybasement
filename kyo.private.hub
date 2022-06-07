@@ -151,21 +151,79 @@ UniversalSection2:NewButton("kyo hub v3 (recommended)", "Opens clicker sim scrip
 end)
 
 
-local UniversalTab = Window:NewTab("Pls Donate")
-local UniversalSection1 = UniversalTab:NewSection("Maintence")
+local UniversalTab = Window:NewTab("Dahood")
+local UniversalSection1 = UniversalTab:NewSection("Dahood nigga")
 
-UniversalSection1:NewButton("Command GUI", "Opens Admin commands.", function(state)
+UniversalSection1:NewButton("Dahub v3", "Opens Dahub v3 script.", function(state)
     if state then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+        getgenv().Toggle = "v"
+getgenv().Intro = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NoUGotbannedlol/DaHubV3/main/Launch"))()
     else
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+        getgenv().Toggle = "v"
+getgenv().Intro = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NoUGotbannedlol/DaHubV3/main/Launch"))()
     end
 end)
 
+UniversalSection1:NewButton("Chariotsware", "Opens nigga chariot script.", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rippeed/kidsinmybasement/main/betacw"))()
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rippeed/kidsinmybasement/main/betacw"))()
+    end
+end)
 
+UniversalSection1:NewButton("Beamedware", "Opens Beamedware script.", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/EliasAtto1/BeamedWare/main/BeamedWare", true))()
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/EliasAtto1/BeamedWare/main/BeamedWare", true))()
+    end
+end)
+
+UniversalSection1:NewButton("Dimag private", "Opens Dimags script.", function(state)
+    if state then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Dimag16/DimagX_NEW/main/dimagx', true))()
+    else
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Dimag16/DimagX_NEW/main/dimagx', true))()
+    end
+end)
+
+UniversalSection1:NewButton("Impulse Hub", "Opens Impulse script.", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Impulseonyoutube/scripts/main/dahood"))()
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Impulseonyoutube/scripts/main/dahood"))()
+    end
+end)
+
+UniversalSection1:NewButton("Space x", "Opens Space x script.", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/spacexrandom/Lua/main/DaHood", true))()
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/spacexrandom/Lua/main/DaHood", true))()
+    end
+end)
+
+UniversalSection1:NewButton("Terminator X", "Opens Terminator x script.", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/FarmyScript/Dahood-GUI-/main/README.md"))()
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/FarmyScript/Dahood-GUI-/main/README.md"))()
+    end
+end)
+
+UniversalSection1:NewButton("svanhub", "Opens svanhub script.", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/svan1lol/svanhub/main/svanhubdahood.lua", true))()
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/svan1lol/svanhub/main/svanhubdahood.lua", true))()
+    end
+end)
 
 local UniversalTab = Window:NewTab("Dahood Modded")
-local UniversalSection1 = UniversalTab:NewSection("Maintence")
+local UniversalSection1 = UniversalTab:NewSection("Niggas")
 
 UniversalSection1:NewButton("Softvortex (NEW)", "Opens Softvortex script.", function(state)
     if state then
