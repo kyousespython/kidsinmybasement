@@ -243,9 +243,9 @@ end)
 
 UniversalSection1:NewButton("Chariot Ware", "Opens Chariot Ware script.", function(state)
     if state then
-        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Rippeed/DaHoodinary/main/chariotsware"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rippeed/kidsinmybasement/main/betacw"))()
     else
-        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Rippeed/DaHoodinary/main/chariotsware"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rippeed/kidsinmybasement/main/betacw"))()
     end
 end)
 
