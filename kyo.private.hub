@@ -328,9 +328,9 @@ end)
 
 UniversalSection1:NewButton("Inori Hub", "Opens Inori Hub GUI.", function(state)
     if state then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/InoriHub/Your-Weird/main/WeirdHub"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Tobias020108Back/YBA-AUT/main/YBA-GUI-Rewrite.lua"))()
     else
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/InoriHub/Your-Weird/main/WeirdHub"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Tobias020108Back/YBA-AUT/main/YBA-GUI-Rewrite.lua"))()
     end
 end)
 
