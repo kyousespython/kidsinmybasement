@@ -33,7 +33,9 @@ UniversalSection1:NewButton("Anti Afk (READ DESC)", "click 10-inf times ", funct
     end)
 end)
 
-UniversalSection1:NewToggle("Godmode", "Ur God now lol.", function(state)
+local UniversalSection3 = UniversalTab:NewSection("OP command shit")
+
+UniversalSection3:NewToggle("Godmode", "Ur God now lol.", function(state)
     
     if state then
         loadstring(game:HttpGet("https://pastebin.com/raw/FwfNEqYz", true))()
@@ -42,7 +44,7 @@ UniversalSection1:NewToggle("Godmode", "Ur God now lol.", function(state)
     end
 end)
 
-UniversalSection1:NewToggle("Invisible", "White cuh.", function(state)
+UniversalSection3:NewToggle("Invisible", "White cuh.", function(state)
     
     if state then
         loadstring(game:HttpGet("https://pastebin.com/raw/HMcCQbpk", true))()
@@ -51,7 +53,7 @@ UniversalSection1:NewToggle("Invisible", "White cuh.", function(state)
     end
 end)
 
-UniversalSection1:NewToggle("Fly", "Press [C].", function(state)
+UniversalSection3:NewToggle("Fly", "Press [C].", function(state)
     
     if state then
         pcall(loadstring(game:HttpGet("https://pastebin.com/raw/ReJ0TXqg")))
@@ -60,7 +62,7 @@ UniversalSection1:NewToggle("Fly", "Press [C].", function(state)
     end
 end)
 
-UniversalSection1:NewToggle("ESP", "Esp nigga.", function(state)
+UniversalSection3:NewToggle("ESP", "Esp nigga.", function(state)
     
     if state then
         loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/WRD ESP.txt"))()
@@ -69,7 +71,7 @@ UniversalSection1:NewToggle("ESP", "Esp nigga.", function(state)
     end
 end)
 
-UniversalSection1:NewToggle("Noclip", "Press [B].", function(state)
+UniversalSection3:NewToggle("Noclip", "Press [B].", function(state)
     
     if state then
         pcall(loadstring(game:HttpGet("https://pastebin.com/raw/kt3Nxzw1")))
@@ -78,16 +80,16 @@ UniversalSection1:NewToggle("Noclip", "Press [B].", function(state)
     end
 end)
 
-UniversalSection1:NewButton("Chat Bypasser", "Gives you a Chat Bypasser which allows you to bypass the roblox chat filter..", function()
+UniversalSection3:NewButton("Chat Bypasser", "Gives you a Chat Bypasser which allows you to bypass the roblox chat filter..", function()
     loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
 end)
 
-UniversalSection1:NewSlider("Fov", "Changes Fov", 120, 70, function(v)
+UniversalSection3:NewSlider("Fov", "Changes Fov", 120, 70, function(v)
     workspace.CurrentCamera.FieldOfView = v
     print("FOV is [v] ")
 end)
 
-UniversalSection1:NewButton("Inf Jumps", "Enables Infinite Jumps.", function()
+UniversalSection3:NewButton("Inf Jumps", "Enables Infinite Jumps.", function()
     local InfiniteJumpEnabled = true
 game:GetService("UserInputService").JumpRequest:connect(function()
 	if InfiniteJumpEnabled then
@@ -96,7 +98,7 @@ game:GetService("UserInputService").JumpRequest:connect(function()
 end)
 end)
 
-UniversalSection1:NewButton("TP Tool", "TP tool in items.", function(state)
+UniversalSection3:NewButton("TP Tool", "TP tool in items.", function(state)
     
     if state then
         pcall(loadstring(game:HttpGet("https://pastebin.com/raw/njMw0Bke")))
@@ -107,7 +109,7 @@ end)
 
 
 local UniversalTab = Window:NewTab("Clicker Simulator")
-local UniversalSection1 = UniversalTab:NewSection("All the clicker sim GUI, made by me kyo#2222")
+local UniversalSection1 = UniversalTab:NewSection("random clicker sim shit, use my GUI!")
 
 UniversalSection1:NewToggle("Fake Hatch", "Auto Hatch nigga.", function(state)
     if state then
@@ -128,6 +130,24 @@ UniversalSection1:NewButton("Craft all golden", "Makes all pets golden (if able)
         for _, v in next, plr.petOwned:GetChildren() do
      rep.Events.Client.upgradePet:FireServer(v.name.Value, 2, v)
      end
+end)
+
+local UniversalSection2 = UniversalTab:NewSection("made by me kyo#2222")
+
+UniversalSection2:NewButton("kyo hub v1", "Opens clicker sim script.", function(state)
+    if state then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/kyousespython/clicker-sim/main/source'))()
+    else
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/kyousespython/clicker-sim/main/source'))()
+    end
+end)
+
+UniversalSection2:NewButton("kyo hub v3 (recommended)", "Opens clicker sim script.", function(state)
+    if state then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/kyousespython/aaaa/main/Lua.'))()
+    else
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/kyousespython/aaaa/main/Lua.'))()
+    end
 end)
 
 
