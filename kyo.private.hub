@@ -53,14 +53,6 @@ UniversalSection3:NewToggle("Invisible", "White cuh.", function(state)
     end
 end)
 
-UniversalSection3:NewToggle("Fly", "Press [C].", function(state)
-    
-    if state then
-        pcall(loadstring(game:HttpGet("https://pastebin.com/raw/ReJ0TXqg")))
-    else
-        pcall(loadstring(game:HttpGet("https://pastebin.com/raw/ReJ0TXqg")))
-    end
-end)
 
 UniversalSection3:NewToggle("ESP", "Esp nigga.", function(state)
     
@@ -214,11 +206,11 @@ UniversalSection1:NewButton("Terminator X", "Opens Terminator x script.", functi
     end
 end)
 
-UniversalSection1:NewButton("svanhub", "Opens svanhub script.", function(state)
+UniversalSection1:NewButton("faded", "Opens faded script.", function(state)
     if state then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/svan1lol/svanhub/main/svanhubdahood.lua", true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
     else
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/svan1lol/svanhub/main/svanhubdahood.lua", true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
     end
 end)
 
