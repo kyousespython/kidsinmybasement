@@ -280,12 +280,7 @@ chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
 chr.RightFoot.MeshId = "902942089"
 chr.RightFoot.Transparency = "1"
 
-UniversalSection5:NewButton("the Mimic", "E = invisible 
-Fist (equip fist/combat) = stop being invisible
-H = Double jump
-F = Normal height
-Q = High Height
-Z = speed- and jump boost (only works when not invisible).", function(state)
+UniversalSection5:NewButton("the Mimic", "E = invisible.", function(state)
     if state then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/JOJOGIO/DH-GAMING/main/STAND%20AURA%20FRAMEWORK"))()
     else
