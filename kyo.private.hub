@@ -1,3 +1,10 @@
+-- dont mess with this shit weirdo
+-- cant use it without me whitelisting u 
+-- nigga ass kys 
+
+
+
+
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("kyo private hub v1.0",  "BloodTheme")
 
@@ -171,6 +178,15 @@ UniversalSection1:NewButton("Beamedware", "Opens Beamedware script.", function(s
         loadstring(game:HttpGet("https://raw.githubusercontent.com/EliasAtto1/BeamedWare/main/BeamedWare", true))()
     else
         loadstring(game:HttpGet("https://raw.githubusercontent.com/EliasAtto1/BeamedWare/main/BeamedWare", true))()
+    end
+end)
+
+UniversalSection3:NewToggle("Crash GUI", "crash cuh.", function(state)
+    
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/22k...", true))() 
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/22k...", true))() 
     end
 end)
 
