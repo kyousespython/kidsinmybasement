@@ -238,7 +238,7 @@ end)
 
 local UniversalSection6 = UniversalTab:NewSection("JOJO FUN")
 
-UniversalSection6:NewButton("Destiny", "Summon!, Multi!, Grow!, Aura!, Vanish!, Mimic!, Barrage!, Stab!, Banish!", function(state)
+UniversalSection6:NewButton("Destiny [STAND]", "Summon!, Multi!, Grow!, Aura!, Vanish!, Mimic!, Barrage!, Stab!, Banish!", function(state)
     if state then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/compwnter/destiny/main/stand"))()
     else
