@@ -173,6 +173,14 @@ UniversalSection1:NewButton("Chariotsware", "Opens nigga chariot script.", funct
     end
 end)
 
+UniversalSection1:NewButton("Destiny (STAND)", "Opens the Destiny JOJO script.", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/compwnter/destiny/main/stand"))()
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/compwnter/destiny/main/stand"))()
+    end
+end)
+
 UniversalSection1:NewButton("Beamedware", "Opens Beamedware script.", function(state)
     if state then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/EliasAtto1/BeamedWare/main/BeamedWare", true))()
@@ -230,6 +238,27 @@ UniversalSection1:NewButton("faded", "Opens faded script.", function(state)
     end
 end)
 
+local UniversalSection6 = UniversalTab:NewSection("JOJO fun stuff")
+
+UniversalSection6:NewButton("Destiny (STAND)", "Opens the Destiny JOJO script.", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/compwnter/destiny/main/stand"))()
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/compwnter/destiny/main/stand"))()
+    end
+end)
+
+UniversalSection6:NewButton("Stand Aura", "makes u have a jojo aura.", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/JOJOGIO/DH-GAMING/main/STAND%20AURA%20FRAMEWORK"))()
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/JOJOGIO/DH-GAMING/main/STAND%20AURA%20FRAMEWORK"))()
+    end
+end)
+
+
+
+
 local UniversalSection5 = UniversalTab:NewSection("visuals")
 
 UniversalSection5:NewToggle("Headless", "No head.")
@@ -250,6 +279,19 @@ chr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
 chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
 chr.RightFoot.MeshId = "902942089"
 chr.RightFoot.Transparency = "1"
+
+UniversalSection5:NewButton("the Mimic", "E = invisible 
+Fist (equip fist/combat) = stop being invisible
+H = Double jump
+F = Normal height
+Q = High Height
+Z = speed- and jump boost (only works when not invisible).", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/JOJOGIO/DH-GAMING/main/STAND%20AURA%20FRAMEWORK"))()
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/JOJOGIO/DH-GAMING/main/STAND%20AURA%20FRAMEWORK"))()
+    end
+end)
 
 local UniversalTab = Window:NewTab("Dahood Modded")
 local UniversalSection1 = UniversalTab:NewSection("Niggas")
