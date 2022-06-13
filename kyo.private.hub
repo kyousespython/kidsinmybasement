@@ -155,16 +155,14 @@ local UniversalSection1 = UniversalTab:NewSection("Dahood GUI's")
 
 UniversalSection1:NewButton("Dahub v3", "Opens Dahub v3 script.", function(state)
     if state then
-        getgenv().Toggle = "v"
-getgenv().Intro = false
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NoUGotbannedlol/DaHubV3/main/Launch"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/NoUGotbannedlol/DaHubV3/main/Launch"))()
+    
     else
-        getgenv().Toggle = "v"
-getgenv().Intro = false
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NoUGotbannedlol/DaHubV3/main/Launch"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/NoUGotbannedlol/DaHubV3/main/Launch"))()
     end
 end)
-
+  
+  
 UniversalSection1:NewButton("Chariotsware", "Opens nigga chariot script.", function(state)
     if state then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Rippeed/kidsinmybasement/main/betacw"))()
@@ -173,19 +171,19 @@ UniversalSection1:NewButton("Chariotsware", "Opens nigga chariot script.", funct
     end
 end)
 
-UniversalSection1:NewButton("Destiny (STAND)", "Opens the Destiny JOJO script.", function(state)
+UniversalSection1:NewButton("Destiny ", "Opens the Destiny script.", function(state)
     if state then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/compwnter/destiny/main/stand"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/compwnter/destiny/main/loader"))()
     else
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/compwnter/destiny/main/stand"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/compwnter/destiny/main/loader"))()
     end
 end)
 
-UniversalSection1:NewButton("Beamedware", "Opens Beamedware script.", function(state)
+UniversalSection1:NewButton("Enclosed Scripts", "Opens Enclosed script.", function(state)
     if state then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/EliasAtto1/BeamedWare/main/BeamedWare", true))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Pvpahh/enclosed/main/enclosed'))()
     else
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/EliasAtto1/BeamedWare/main/BeamedWare", true))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Pvpahh/enclosed/main/enclosed'))()
     end
 end)
 
