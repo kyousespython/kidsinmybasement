@@ -40,7 +40,7 @@ UniversalSection1:NewButton("Anti Afk (READ DESC)", "click 10-inf times ", funct
     end)
 end)
 
-local UniversalSection3 = UniversalTab:NewSection("OP command shit")
+local UniversalSection3 = UniversalTab:NewSection("Commands")
 
 UniversalSection3:NewToggle("Godmode", "Ur God now lol.", function(state)
     
@@ -108,7 +108,7 @@ end)
 
 
 local UniversalTab = Window:NewTab("Clicker Simulator")
-local UniversalSection1 = UniversalTab:NewSection("random clicker sim shit, use my GUI!")
+local UniversalSection1 = UniversalTab:NewSection("Clicker sim stuff")
 
 UniversalSection1:NewToggle("Fake Hatch", "Auto Hatch nigga.", function(state)
     if state then
@@ -151,7 +151,7 @@ end)
 
 
 local UniversalTab = Window:NewTab("Dahood")
-local UniversalSection1 = UniversalTab:NewSection("Dahood nigga")
+local UniversalSection1 = UniversalTab:NewSection("Dahood GUI's")
 
 UniversalSection1:NewButton("Dahub v3", "Opens Dahub v3 script.", function(state)
     if state then
@@ -238,15 +238,16 @@ UniversalSection1:NewButton("faded", "Opens faded script.", function(state)
     end
 end)
 
-local UniversalSection6 = UniversalTab:NewSection("JOJO fun stuff")
+local UniversalSection6 = UniversalTab:NewSection("JOJO FUN")
 
-UniversalSection6:NewButton("Destiny (STAND)", "Opens the Destiny JOJO script.", function(state)
+UniversalSection6:NewButton("Destiny", "Summon!, Multi!, Grow!, Aura!, Vanish!, Mimic!, Barrage!, Stab!, Banish!", function(state)
     if state then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/compwnter/destiny/main/stand"))()
     else
         loadstring(game:HttpGet("https://raw.githubusercontent.com/compwnter/destiny/main/stand"))()
     end
 end)
+
 
 UniversalSection6:NewButton("Stand Aura", "makes u have a jojo aura.", function(state)
     if state then
@@ -289,7 +290,7 @@ UniversalSection5:NewButton("the Mimic", "E = invisible.", function(state)
 end)
 
 local UniversalTab = Window:NewTab("Dahood Modded")
-local UniversalSection1 = UniversalTab:NewSection("Niggas")
+local UniversalSection1 = UniversalTab:NewSection("GUI's")
 
 UniversalSection1:NewButton("Softvortex (NEW)", "Opens Softvortex script.", function(state)
     if state then
@@ -347,7 +348,7 @@ end)
 
 
 local UniversalTab = Window:NewTab("Blox Fruits")
-local UniversalSection1 = UniversalTab:NewSection("Maintence")
+local UniversalSection1 = UniversalTab:NewSection("Blox Fruit Scripts")
 
 UniversalSection1:NewButton("Evo x Hub (recommended)", "Opens Evo x Hub GUI.", function(state)
     if state then
@@ -382,7 +383,7 @@ UniversalSection1:NewButton("Noname Hub", "Opens Noname Hub GUI.", function(stat
 end)
 
 local UniversalTab = Window:NewTab("YBA")
-local UniversalSection1 = UniversalTab:NewSection("Script GUI")
+local UniversalSection1 = UniversalTab:NewSection("Yba scripts GUI")
 
 UniversalSection1:NewButton("YBA Hub (very recommended)", "Opens Noname Hub GUI.", function(state)
     if state then
