@@ -181,7 +181,7 @@ UniversalSection1:NewButton("Beamedware", "Opens Beamedware script.", function(s
     end
 end)
 
-UniversalSection3:NewToggle("Crash GUI", "crash cuh.", function(state)
+UniversalSection1:NewToggle("Crash GUI", "crash cuh.", function(state)
     
     if state then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/22k...", true))() 
