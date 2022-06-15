@@ -6,7 +6,7 @@
 
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Kyo Hub [private]",  "Serpent")
+local Window = Library.CreateLib("Kyo Hub [private]",  "DarkTheme")
 
 local UniversalTab = Window:NewTab("Player")
 local UniversalSection1 = UniversalTab:NewSection("Misc")
@@ -106,48 +106,6 @@ UniversalSection3:NewButton("TP Tool", "TP tool in items.", function(state)
     end
 end)
 
-
-local UniversalTab = Window:NewTab("Clicker Simulator")
-local UniversalSection1 = UniversalTab:NewSection("Clicker sim stuff")
-
-UniversalSection1:NewToggle("Fake Hatch", "Auto Hatch nigga.", function(state)
-    if state then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/hackerDashDash/ClickerSimulator/main/clickerSimulatorFakeHatcher.lua",true))()
-    else
-        
-    end
-end)
-
-
-UniversalSection1:NewButton("Unlock 2x Luck Boost", "2x Luck boost.", function()
-    plr.Boosts.DoubleLuck.isActive.Value = true end)
-
-UniversalSection1:NewButton("Unlock 2x Click Boost", "Unlocks 2x Clicks.", function()
-    plr.Boosts.DoubleClicks.isActive.Value = true end)
-
-UniversalSection1:NewButton("Craft all golden", "Makes all pets golden (if able).", function()
-        for _, v in next, plr.petOwned:GetChildren() do
-     rep.Events.Client.upgradePet:FireServer(v.name.Value, 2, v)
-     end
-end)
-
-local UniversalSection2 = UniversalTab:NewSection("made by me kyo#2222")
-
-UniversalSection2:NewButton("kyo hub v1", "Opens clicker sim script.", function(state)
-    if state then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/kyousespython/clicker-sim/main/source'))()
-    else
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/kyousespython/clicker-sim/main/source'))()
-    end
-end)
-
-UniversalSection2:NewButton("kyo hub v3 (recommended)", "Opens clicker sim script.", function(state)
-    if state then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/kyousespython/aaaa/main/Lua.'))()
-    else
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/kyousespython/aaaa/main/Lua.'))()
-    end
-end)
 
 
 local UniversalTab = Window:NewTab("Dahood")
@@ -287,6 +245,7 @@ UniversalSection5:NewButton("the Mimic", "E = invisible.", function(state)
     end
 end)
 
+
 local UniversalTab = Window:NewTab("Dahood Modded")
 local UniversalSection1 = UniversalTab:NewSection("GUI's")
 
@@ -297,6 +256,7 @@ UniversalSection1:NewButton("Softvortex (NEW)", "Opens Softvortex script.", func
         loadstring(game:HttpGet(("https://raw.githubusercontent.com/SoftVortex/609/main/99"),true))()
     end
 end)
+
 
 UniversalSection1:NewButton("Focus Hub", "Opens Focus Hub script.", function(state)
     if state then
@@ -398,6 +358,49 @@ UniversalSection1:NewButton("Inori Hub", "Opens Inori Hub GUI.", function(state)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Tobias020108Back/YBA-AUT/main/YBA-GUI-Rewrite.lua"))()
     end
 end)
+
+local UniversalTab = Window:NewTab("Clicker Simulator")
+local UniversalSection1 = UniversalTab:NewSection("Clicker sim stuff")
+
+UniversalSection1:NewToggle("Fake Hatch", "Auto Hatch nigga.", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/hackerDashDash/ClickerSimulator/main/clickerSimulatorFakeHatcher.lua",true))()
+    else
+        
+    end
+end)
+
+
+UniversalSection1:NewButton("Unlock 2x Luck Boost", "2x Luck boost.", function()
+    plr.Boosts.DoubleLuck.isActive.Value = true end)
+
+UniversalSection1:NewButton("Unlock 2x Click Boost", "Unlocks 2x Clicks.", function()
+    plr.Boosts.DoubleClicks.isActive.Value = true end)
+
+UniversalSection1:NewButton("Craft all golden", "Makes all pets golden (if able).", function()
+        for _, v in next, plr.petOwned:GetChildren() do
+     rep.Events.Client.upgradePet:FireServer(v.name.Value, 2, v)
+     end
+end)
+
+local UniversalSection2 = UniversalTab:NewSection("made by me kyo#2222")
+
+UniversalSection2:NewButton("kyo hub v1", "Opens clicker sim script.", function(state)
+    if state then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/kyousespython/clicker-sim/main/source'))()
+    else
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/kyousespython/clicker-sim/main/source'))()
+    end
+end)
+
+UniversalSection2:NewButton("kyo hub v3 (recommended)", "Opens clicker sim script.", function(state)
+    if state then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/kyousespython/aaaa/main/Lua.'))()
+    else
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/kyousespython/aaaa/main/Lua.'))()
+    end
+end)
+
 
 local UniversalTab = Window:NewTab("More Scripts")
 local UniversalSection1 = UniversalTab:NewSection("best of the best")
