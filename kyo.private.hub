@@ -122,9 +122,9 @@ end)
 UniversalSection1:NewButton("Crash GUI", "crash cuh.", function(state)
     
     if state then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/22k...", true))() 
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/GS21Official/DH-TB-Crash/main/Swagmode%20crash%20modified%20(better%20FPS)%20crash'))()
     else
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/22k...", true))() 
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/GS21Official/DH-TB-Crash/main/Swagmode%20crash%20modified%20(better%20FPS)%20crash'))()
     end
 end)
 
@@ -168,15 +168,6 @@ UniversalSection1:NewButton("faded", "Opens faded script.", function(state)
     end
 end)
 
-local UniversalSection8 = UniversalTab:NewSection("locks")
-
-UniversalSection8:NewButton("Aimlock", "a good aimlock.", function(state)
-    if state then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/kyousespython/aimlock/main/dh'))()
-    else
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/kyousespython/aimlock/main/dh'))()
-    end
-end)
 
 local UniversalSection6 = UniversalTab:NewSection("fun stuff")
 
@@ -276,6 +267,14 @@ UniversalSection1:NewButton("Project Meow", "Opens Project Meow script.", functi
     end
 end)
 
+UniversalSection1:NewButton("Delta", "Delta script.", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/lxnnydev/Delta-PSX/main/loader.lua"))()
+end)
+
+UniversalSection1:NewButton("Xenon Hub", "Xenon script.", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/VTmvxckj'))()
+end)
+
 
 
 local UniversalTab = Window:NewTab("Blox Fruits")
@@ -324,11 +323,11 @@ UniversalSection1:NewButton("YBA Hub (very recommended)", "Opens Noname Hub GUI.
     end
 end)
 
-UniversalSection1:NewButton("Inori Hub", "Opens Inori Hub GUI.", function(state)
+UniversalSection1:NewButton("Yba Sucks", "Opens Yba sucks GUI.", function(state)
     if state then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Tobias020108Back/YBA-AUT/main/YBA-GUI-Rewrite.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Tobias020108Back/YBA-AUT/main/YBA-GUI-Rewrite.lua"))() 
     else
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Tobias020108Back/YBA-AUT/main/YBA-GUI-Rewrite.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Tobias020108Back/YBA-AUT/main/YBA-GUI-Rewrite.lua"))() 
     end
 end)
 
@@ -356,7 +355,7 @@ UniversalSection1:NewButton("Craft all golden", "Makes all pets golden (if able)
      end
 end)
 
-local UniversalSection2 = UniversalTab:NewSection("made by me kyo#2222")
+local UniversalSection2 = UniversalTab:NewSection("made by kyo#2222")
 
 UniversalSection2:NewButton("kyo hub v1", "Opens clicker sim script.", function(state)
     if state then
