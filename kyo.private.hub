@@ -6,7 +6,7 @@
 
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Kyo Hub [private]",  "DarkTheme")
+local Window = Library.CreateLib("Kyo Loader", colors)
 
 local UniversalTab = Window:NewTab("Player")
 local UniversalSection1 = UniversalTab:NewSection("Misc")
@@ -30,7 +30,11 @@ UniversalSection1:NewToggle("Toggle Jump Power", "Toggles Jump Power.", function
     end
 end)
 
-UniversalSection1:NewButton("Anti Afk (READ DESC)", "click 10-inf times ", function()
+
+
+local UniversalSection3 = UniversalTab:NewSection("Commands")
+
+UniversalSection3:NewButton("Anti Afk (READ DESC)", "click 10-inf times ", function()
     print("Clicked")
     local vu = game:GetService("VirtualUser")
     game:GetService("Players").LocalPlayer.Idled:connect(function()
@@ -40,24 +44,12 @@ UniversalSection1:NewButton("Anti Afk (READ DESC)", "click 10-inf times ", funct
     end)
 end)
 
-local UniversalSection3 = UniversalTab:NewSection("Commands")
-
-UniversalSection3:NewToggle("Godmode", "Ur God now lol.", function(state)
-    
-    if state then
-        loadstring(game:HttpGet("https://pastebin.com/raw/FwfNEqYz", true))()
-    else
-        loadstring(game:HttpGet("https://pastebin.com/raw/FwfNEqYz", true))()
-    end
+UniversalSection3:NewButton("Godmode", "Ur God now lol.", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/FwfNEqYz", true))()
 end)
 
-UniversalSection3:NewToggle("Invisible", "White cuh.", function(state)
-    
-    if state then
-        loadstring(game:HttpGet("https://pastebin.com/raw/HMcCQbpk", true))()
-    else
-        loadstring(game:HttpGet("https://pastebin.com/raw/HMcCQbpk", true))()
-    end
+UniversalSection3:NewButton("Invisible", "White cuh.", function(state)
+    loadstring(game:HttpGet("https://pastebin.com/raw/HMcCQbpk", true))()
 end)
 
 
@@ -70,23 +62,14 @@ UniversalSection3:NewToggle("ESP", "Esp nigga.", function(state)
     end
 end)
 
-UniversalSection3:NewToggle("Noclip", "Press [B].", function(state)
-    
-    if state then
-        pcall(loadstring(game:HttpGet("https://pastebin.com/raw/kt3Nxzw1")))
-    else
-        pcall(loadstring(game:HttpGet("https://pastebin.com/raw/kt3Nxzw1")))
-    end
+UniversalSection3:NewButton("Noclip", "Press [B].", function(state)
+    pcall(loadstring(game:HttpGet("https://pastebin.com/raw/kt3Nxzw1")))
 end)
 
 UniversalSection3:NewButton("Chat Bypasser", "Gives you a Chat Bypasser which allows you to bypass the roblox chat filter..", function()
     loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
 end)
 
-UniversalSection3:NewSlider("Fov", "Changes Fov", 120, 70, function(v)
-    workspace.CurrentCamera.FieldOfView = v
-    print("FOV is [v] ")
-end)
 
 UniversalSection3:NewButton("Inf Jumps", "Enables Infinite Jumps.", function()
     local InfiniteJumpEnabled = true
@@ -111,12 +94,11 @@ end)
 local UniversalTab = Window:NewTab("Dahood")
 local UniversalSection1 = UniversalTab:NewSection("Dahood GUI's")
 
-UniversalSection1:NewButton("Dahub v3", "Opens Dahub v3 script.", function(state)
+UniversalSection1:NewButton("Enclosed Scripts (recommended)", "Opens Enclosed script.", function(state)
     if state then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/NoUGotbannedlol/DaHubV3/main/Launch"))()
-    
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Pvpahh/enclosed/main/enclosed'))()
     else
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/NoUGotbannedlol/DaHubV3/main/Launch"))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Pvpahh/enclosed/main/enclosed'))()
     end
 end)
   
@@ -137,15 +119,7 @@ UniversalSection1:NewButton("Destiny ", "Opens the Destiny script.", function(st
     end
 end)
 
-UniversalSection1:NewButton("Enclosed Scripts", "Opens Enclosed script.", function(state)
-    if state then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/Pvpahh/enclosed/main/enclosed'))()
-    else
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/Pvpahh/enclosed/main/enclosed'))()
-    end
-end)
-
-UniversalSection1:NewToggle("Crash GUI", "crash cuh.", function(state)
+UniversalSection1:NewButton("Crash GUI", "crash cuh.", function(state)
     
     if state then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/22k...", true))() 
@@ -194,7 +168,17 @@ UniversalSection1:NewButton("faded", "Opens faded script.", function(state)
     end
 end)
 
-local UniversalSection6 = UniversalTab:NewSection("JOJO FUN")
+local UniversalSection8 = UniversalTab:NewSection("locks")
+
+UniversalSection8:NewButton("Aimlock", "a good aimlock.", function(state)
+    if state then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/kyousespython/aimlock/main/dh'))()
+    else
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/kyousespython/aimlock/main/dh'))()
+    end
+end)
+
+local UniversalSection6 = UniversalTab:NewSection("fun stuff")
 
 UniversalSection6:NewButton("Destiny [STAND]", "Summon!, Multi!, Grow!, Aura!, Vanish!, Mimic!, Barrage!, Stab!, Banish!", function(state)
     if state then
@@ -212,9 +196,6 @@ UniversalSection6:NewButton("Stand Aura", "makes u have a jojo aura.", function(
         loadstring(game:HttpGet("https://raw.githubusercontent.com/JOJOGIO/DH-GAMING/main/STAND%20AURA%20FRAMEWORK"))()
     end
 end)
-
-
-
 
 local UniversalSection5 = UniversalTab:NewSection("visuals")
 
@@ -236,14 +217,6 @@ chr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
 chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
 chr.RightFoot.MeshId = "902942089"
 chr.RightFoot.Transparency = "1"
-
-UniversalSection5:NewButton("the Mimic", "E = invisible.", function(state)
-    if state then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/JOJOGIO/DH-GAMING/main/STAND%20AURA%20FRAMEWORK"))()
-    else
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/JOJOGIO/DH-GAMING/main/STAND%20AURA%20FRAMEWORK"))()
-    end
-end)
 
 
 local UniversalTab = Window:NewTab("Dahood Modded")
@@ -498,15 +471,27 @@ end)
 
 
 
-local Version = "0.0.3"
+local Version = "0.4"
 
 
 local HomeTab = Window:NewTab("Credits")
 local HomeSection = HomeTab:NewSection("Home")
 
-HomeSection:NewLabel("Welcome, " .. game.Players.LocalPlayer.Name .. " to Kyos Hub")
+HomeSection:NewLabel("Welcome, " .. game.Players.LocalPlayer.Name .. " to Kyos Loader")
 HomeSection:NewLabel("Version is " .. Version .. ".")
 
 HomeSection:NewLabel("Additional Help: <font color='rgb(0, 255, 255)'>kyo#2222</font>")
+HomeSection:NewKeybind("Set Keybind", "Toggle UI", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
+HomeSection:NewColorPicker("GUI color", "Color choose!", Color3.fromRGB(0,0,0), function(color)
+    print(color)
+    -- Second argument is the default color
+end)
+for theme, color in pairs(themes) do
+    HomeSection:NewColorPicker(theme, "Change your "..theme, color, function(color3)
+        Library:ChangeColor(theme, color3)
+    end)
+end
 HomeSection:NewButton("Copy Discord Invite")
 setclipboard("https://discord.gg/mEBPWnUCCd")
