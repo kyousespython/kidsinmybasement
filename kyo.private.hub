@@ -4,7 +4,6 @@
 
 
 
-
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Kyo Loader", colors)
 
@@ -331,50 +330,16 @@ UniversalSection1:NewButton("Yba Sucks", "Opens Yba sucks GUI.", function(state)
     end
 end)
 
+UniversalSection1:NewButton("Xenon", "Opens XENON GUI.", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Tobias020108Back/YBA-AUT/main/YBA-GUI-Rewrite.lua"))() 
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Tobias020108Back/YBA-AUT/main/YBA-GUI-Rewrite.lua"))() 
+    end
+end)
+
 local UniversalTab = Window:NewTab("Clicker Simulator")
 local UniversalSection1 = UniversalTab:NewSection("Clicker sim stuff")
-
-UniversalSection1:NewToggle("AutoTap", "auto taps.", function(state)
-    if state then
-        _G.autoTap = true
-		spawn(function()
-			while _G.autoTap == true do
-			game:GetService("ReplicatedStorage").Remotes:FindFirstChild("\226\154\161\240\159\150\177\239\184\143"):FireServer()
-			wait()
-		end
-		end)
-    else
-        _G.autoTap = false
-		spawn(function()
-			while _G.autoTap == true do
-			game:GetService("ReplicatedStorage").Remotes:FindFirstChild("\226\154\161\240\159\150\177\239\184\143"):FireServer()
-			wait()
-		end
-		end)
-    end
-end)
-
-UniversalSection1:NewToggle("AutoRebirth", "auto rebirths.", function(state)
-    if state then
-        _G.autoRebirth = true
-		spawn(function()
-			while _G.autoRebirth == true do
-				local args = {[1] = "3"}
-				game:GetService("ReplicatedStorage").Remotes:FindFirstChild("\226\154\161\239\184\189"):FireServer(unpack(args))
-				wait()
-		end
-		end)
-    else
-        _G.autoRebirth = false
-		spawn(function()
-			while _G.autoRebirth == true do
-				local args = {[1] = "3"}
-				game:GetService("ReplicatedStorage").Remotes:FindFirstChild("\226\154\161\239\184\189"):FireServer(unpack(args))
-				wait()
-		end
-		end)
-    end
-end)
 
 UniversalSection1:NewToggle("Fake Hatch", "Auto Hatch nigga.", function(state)
     if state then
