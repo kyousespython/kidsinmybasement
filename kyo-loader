@@ -212,11 +212,11 @@ chr.RightFoot.Transparency = "1"
 local UniversalTab = Window:NewTab("Dahood Modded")
 local UniversalSection1 = UniversalTab:NewSection("GUI's")
 
-UniversalSection1:NewButton("Softvortex (NEW)", "Opens Softvortex script.", function(state)
+UniversalSection1:NewButton("Softvortex (updated)", "Opens Softvortex script.", function(state)
     if state then
-        loadstring(game:HttpGet(("https://raw.githubusercontent.com/SoftVortex/609/main/99"),true))()
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/SoftVortex/305/main/2"),true))()
     else
-        loadstring(game:HttpGet(("https://raw.githubusercontent.com/SoftVortex/609/main/99"),true))()
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/SoftVortex/305/main/2"),true))()
     end
 end)
 
