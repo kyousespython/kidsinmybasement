@@ -136,6 +136,7 @@ end)
 UniversalSection1:NewButton("Raycode X", "OP", function()
 --Raycodex
 loadstring(game:GetObjects("rbxassetid://5812737894")[1].Source)()
+end)
 
 UniversalSection1:NewButton("Enclosed Scripts (recommended)", "Opens Enclosed script.", function(state)
     if state then
@@ -230,6 +231,7 @@ Q - Play humming sound |
 Z - Play footsteps sound
 ]]
 loadstring(game:HttpGet("https://icxy.xyz/NovaGui/NovaMimic", true))()
+end)
 
 
 UniversalSection6:NewButton("Stand Aura", "makes u have a jojo aura.", function(state)
