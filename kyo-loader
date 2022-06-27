@@ -101,6 +101,10 @@ UniversalSection1:NewButton("Kaotic Ware", "Opens Kaotic Ware script.", function
     end
 end)
 
+UniversalSection1:NewButton("Raycode X", "OP", function()
+--Raycodex
+loadstring(game:GetObjects("rbxassetid://5812737894")[1].Source)()
+
 UniversalSection1:NewButton("Enclosed Scripts (recommended)", "Opens Enclosed script.", function(state)
     if state then
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Pvpahh/enclosed/main/enclosed'))()
