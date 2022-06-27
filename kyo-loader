@@ -3,7 +3,7 @@
 -- nigga ass kys 
 
 game.StarterGui:SetCore("SendNotification", {
-    Title = "Kaotic Ware";
+    Title = "Kaotic Loader";
     Text = "Please wait...";
     Duration = 5;
 })
@@ -17,7 +17,7 @@ message = "Logged in"
 
 
 game.StarterGui:SetCore("SendNotification", {
-    Title = "Kaotic Ware";
+    Title = "Kaotic Loader";
     Text = "Checking Whitelist...";
     Duration = 10;
 })
