@@ -1,7 +1,38 @@
 -- dont mess with this shit weirdo
 -- cant use it without me whitelisting u 
 -- nigga ass kys 
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Kaotic Loader";
+    Text = "Please wait...";
+    Duration = 5;
+})
+wait(3)
 
+local p = Instance.new("IntValue")
+p.Parent = workspace
+p.Value = game.Players.LocalPlayer.userId
+getuser = game.Players.LocalPlayer.Name
+message = "Logged in"
+
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Kaotic Loader";
+    Text = "Checking Whitelist...";
+    Duration = 10;
+})
+wait(10)
+
+
+local plr = game.Players.LocalPlayer
+repeat wait() until plr.Character
+local gui = script.Parent
+
+
+    game.StarterGui:SetCore("SendNotification", {
+    Title = "Made by kyo#2222";
+    Text = ;
+    Duration = 20;
+})
 
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
