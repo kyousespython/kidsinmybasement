@@ -93,6 +93,14 @@ end)
 local UniversalTab = Window:NewTab("Dahood")
 local UniversalSection1 = UniversalTab:NewSection("Dahood GUI's")
 
+UniversalSection1:NewButton("Kaotic Ware", "Opens Kaotic Ware script.", function(state)
+    if state then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/kyousespython/KaoticWare/main/V1.5'))()
+    else
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/kyousespython/KaoticWare/main/V1.5'))()
+    end
+end)
+
 UniversalSection1:NewButton("Enclosed Scripts (recommended)", "Opens Enclosed script.", function(state)
     if state then
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Pvpahh/enclosed/main/enclosed'))()
@@ -177,6 +185,15 @@ UniversalSection6:NewButton("Destiny [STAND]", "Summon!, Multi!, Grow!, Aura!, V
         loadstring(game:HttpGet("https://raw.githubusercontent.com/compwnter/destiny/main/stand"))()
     end
 end)
+
+UniversalSection6:NewButton("The Mimic", "Unleaked the mimic script (read info)", function()
+--[[
+X - Go invis
+B - Jumpscare
+Q - Play humming sound |
+Z - Play footsteps sound
+]]
+loadstring(game:HttpGet("https://icxy.xyz/NovaGui/NovaMimic", true))()
 
 
 UniversalSection6:NewButton("Stand Aura", "makes u have a jojo aura.", function(state)
