@@ -566,9 +566,7 @@ HomeSection:NewLabel("Welcome, " .. game.Players.LocalPlayer.Name .. " to Kyos L
 HomeSection:NewLabel("Version is " .. Version .. ".")
 
 HomeSection:NewLabel("Additional Help: <font color='rgb(0, 255, 255)'>kyo#2222</font>")
-HomeSection:NewKeybind("Set Keybind", "Toggle UI", Enum.KeyCode.F, function()
-	Library:ToggleUI()
-end)
+HomeSection:NewLabel("erin sucks.")
 HomeSection:NewColorPicker("GUI color", "Color choose!", Color3.fromRGB(0,0,0), function(color)
     print(color)
     -- Second argument is the default color
@@ -580,5 +578,6 @@ for theme, color in pairs(themes) do
 end
 HomeSection:NewButton("Copy Discord Invite")
 setclipboard("https://discord.gg/mEBPWnUCCd")
-
-HomeSection:NewLabel("erin sucks.")
+HomeSection:NewKeybind("Set Keybind", "Toggle UI", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
