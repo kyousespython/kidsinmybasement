@@ -61,7 +61,7 @@ local gui = script.Parent
 
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Kyo Loader", colors)
+local Window = Library.CreateLib("Katics Loader", colors)
 
 local UniversalTab = Window:NewTab("Player")
 local UniversalSection1 = UniversalTab:NewSection("Selection")
@@ -325,7 +325,7 @@ UniversalSection1:NewButton("Oblivion", "Opens Oblivion script.", function(state
 end)
 
 local UniversalTab = Window:NewTab("Pet Sim X")
-local UniversalSection1 = UniversalTab:NewSection("Selection")
+local UniversalSection1 = UniversalTab:NewSection("Pet Simulator X scripts")
 
 UniversalSection1:NewButton("Saza Hub", "Opens Pet Sim script.", function(state)
     if state then
@@ -390,7 +390,7 @@ UniversalSection1:NewButton("Noname Hub", "Opens Noname Hub GUI.", function(stat
     end
 end)
 
-local UniversalTab = Window:NewTab("YBA")
+local UniversalTab = Window:NewTab("Selection")
 local UniversalSection1 = UniversalTab:NewSection("Selection")
 
 UniversalSection1:NewButton("YBA Hub (very recommended)", "Opens Noname Hub GUI.", function(state)
@@ -441,7 +441,7 @@ UniversalSection1:NewButton("Craft all golden", "Makes all pets golden (if able)
      end
 end)
 
-local UniversalSection2 = UniversalTab:NewSection("made by kyo#2222")
+local UniversalSection2 = UniversalTab:NewSection("Selection")
 
 UniversalSection2:NewButton("kyo hub v1", "Opens clicker sim script.", function(state)
     if state then
@@ -556,7 +556,7 @@ end)
 
 
 
-local Version = "1.5"
+local Version = "0.4"
 
 
 local HomeTab = Window:NewTab("Credits")
@@ -565,8 +565,11 @@ local HomeSection = HomeTab:NewSection("Home")
 HomeSection:NewLabel("Welcome, " .. game.Players.LocalPlayer.Name .. " to Kyos Loader")
 HomeSection:NewLabel("Version is " .. Version .. ".")
 
-HomeSection:NewLabel("Additional Help: <font color='rgb(0, 255, 255)'>kyo#2222</font>")
-HomeSection:NewLabel("<font color='rgb(0, 255, 255)'>erin sucks.</font>")
+HomeSection:NewLabel("Additional Help: <font color='rgb(0, 255, 255)'>made by kyo#2222</font>")
+HomeSection:NewLabel("<font color='rgb(0, 255, 255)'>erin is my seed</font>")
+HomeSection:NewKeybind("Set Keybind", "Toggle UI", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
 HomeSection:NewColorPicker("GUI color", "Color choose!", Color3.fromRGB(0,0,0), function(color)
     print(color)
     -- Second argument is the default color
@@ -578,6 +581,3 @@ for theme, color in pairs(themes) do
 end
 HomeSection:NewButton("Copy Discord Invite")
 setclipboard("https://discord.gg/mEBPWnUCCd")
-HomeSection:NewKeybind("Set Keybind", "Toggle UI", Enum.KeyCode.F, function()
-	Library:ToggleUI()
-end)
